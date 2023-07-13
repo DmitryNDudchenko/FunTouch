@@ -43,6 +43,12 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(anotherView, animated: true)
     }
     
+    
+    @IBAction func moveToAlertsView(_ sender: UIButton) {
+        let alertsVC = AlertsView()
+        navigationController?.pushViewController(alertsVC, animated: true)
+    }
+    
     @objc private func swipeFunc(gesture: UISwipeGestureRecognizer){
         if gesture.direction == .up {
 
