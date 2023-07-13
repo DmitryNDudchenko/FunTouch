@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="FunTouch" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="dyE-xo-Y0O"/>
+                <outlet property="imageView" destination="SIU-9q-BAN" id="kzZ-2K-kvS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="166"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="png-transparent-pink-and-red-petaled-flowers-painting-flower-decoupage-flower-watercolor-flower-arranging-photography-poster" translatesAutoresizingMaskIntoConstraints="NO" id="SIU-9q-BAN">
+                    <rect key="frame" x="0.0" y="0.0" width="373" height="132"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SIU-9q-BAN" secondAttribute="bottom" id="HUu-qg-32X"/>
+                <constraint firstItem="SIU-9q-BAN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NqN-A8-fJk"/>
+                <constraint firstItem="SIU-9q-BAN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tNo-1K-Y27"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SIU-9q-BAN" secondAttribute="trailing" id="zgn-hM-Xyr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="105.07246376811595" y="146.65178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="png-transparent-pink-and-red-petaled-flowers-painting-flower-decoupage-flower-watercolor-flower-arranging-photography-poster" width="920" height="920"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
