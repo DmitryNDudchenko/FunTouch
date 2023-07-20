@@ -24,6 +24,8 @@
 		70B42E952A4B4AD900107148 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B42E932A4B4AD900107148 /* MainViewController.swift */; };
 		70B42E962A4B4AD900107148 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70B42E942A4B4AD900107148 /* MainViewController.xib */; };
 		70B42E982A4B57F100107148 /* ViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B42E972A4B57F100107148 /* ViewConfig.swift */; };
+		70E5BF6A2A698F3A00586CB2 /* InteractiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E5BF682A698F3A00586CB2 /* InteractiveView.swift */; };
+		70E5BF6B2A698F3A00586CB2 /* InteractiveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E5BF692A698F3A00586CB2 /* InteractiveView.xib */; };
 		70F4730D2A322A2400CFD712 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F4730B2A322A2400CFD712 /* mainViewController.swift */; };
 		70F4730E2A322A2400CFD712 /* mainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F4730C2A322A2400CFD712 /* mainViewController.xib */; };
 		70F473112A32360700CFD712 /* AnotherXibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F4730F2A32360700CFD712 /* AnotherXibViewController.swift */; };
@@ -54,6 +56,8 @@
 		70B42E932A4B4AD900107148 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		70B42E942A4B4AD900107148 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		70B42E972A4B57F100107148 /* ViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfig.swift; sourceTree = "<group>"; };
+		70E5BF682A698F3A00586CB2 /* InteractiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveView.swift; sourceTree = "<group>"; };
+		70E5BF692A698F3A00586CB2 /* InteractiveView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InteractiveView.xib; sourceTree = "<group>"; };
 		70F4730B2A322A2400CFD712 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		70F4730C2A322A2400CFD712 /* mainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mainViewController.xib; sourceTree = "<group>"; };
 		70F4730F2A32360700CFD712 /* AnotherXibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherXibViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +193,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		70E5BF672A698F1100586CB2 /* Interactive View */ = {
+			isa = PBXGroup;
+			children = (
+				70E5BF682A698F3A00586CB2 /* InteractiveView.swift */,
+				70E5BF692A698F3A00586CB2 /* InteractiveView.xib */,
+			);
+			path = "Interactive View";
+			sourceTree = "<group>";
+		};
 		70F473132A32362F00CFD712 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +212,7 @@
 				70B42E802A4B2FF500107148 /* AnotherXibView */,
 				70B42E7F2A4B2FD500107148 /* Test View  */,
 				70B42E872A4B43D600107148 /* Registration View */,
+				70E5BF672A698F1100586CB2 /* Interactive View */,
 				70B42E862A4B43C700107148 /* Main View */,
 			);
 			path = View;
@@ -287,6 +301,7 @@
 				70F473292A32588900CFD712 /* NoteViewController.xib in Resources */,
 				709766EF2A44FD5F000D81FD /* CustomView.xib in Resources */,
 				70B42E962A4B4AD900107148 /* MainViewController.xib in Resources */,
+				70E5BF6B2A698F3A00586CB2 /* InteractiveView.xib in Resources */,
 				70F4730E2A322A2400CFD712 /* mainViewController.xib in Resources */,
 				70F473122A32360700CFD712 /* AnotherXibViewController.xib in Resources */,
 			);
@@ -305,6 +320,7 @@
 				70B42E922A4B455500107148 /* GradientView.swift in Sources */,
 				70B42E952A4B4AD900107148 /* MainViewController.swift in Sources */,
 				114577892943A21C0097426C /* AppDelegate.swift in Sources */,
+				70E5BF6A2A698F3A00586CB2 /* InteractiveView.swift in Sources */,
 				70B42E8E2A4B443300107148 /* RegistrationViewController.swift in Sources */,
 				709766EC2A44FD4A000D81FD /* CustomView.swift in Sources */,
 				70F473282A32588900CFD712 /* NoteViewController.swift in Sources */,

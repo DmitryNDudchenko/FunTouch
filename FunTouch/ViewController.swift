@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var buttonContin: UIButton!
     
-    let generator = UIImpactFeedbackGenerator(style: .heavy) //Инициализация обьекта UIImpactFeedbackGenerator для фидбека вибрацией. Параметр style: определяет тип виброотклика
+    let generator = UIImpactFeedbackGenerator(style: .heavy)  вибрацией. Параметр style: определяет тип виброотклика
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +29,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func goToStartPage(_ sender: UIButton) {
-        let mainView = RegistrationViewController()
-        navigationController?.pushViewController(mainView, animated: true)
+//        let mainView
+//        navigationController?.pushViewController(mainView, animated: true)
     }
     
     @IBAction func buttonNavigation(_ sender: UIButton) {
-        generator.impactOccurred() //Имплементация виброотклика по нажатию кнопки
+        generator.impactOccurred()
     }
 
     @IBAction func goToAnotherXibView(_ sender: UIButton) {
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     @objc private func swipeFunc(gesture: UISwipeGestureRecognizer){
         if gesture.direction == .up {
 
-            generator.impactOccurred() // Инициализация виброотклика при свайпе вверх 
+            generator.impactOccurred()
             performSegue(withIdentifier: "upID", sender: self)
 
         }
