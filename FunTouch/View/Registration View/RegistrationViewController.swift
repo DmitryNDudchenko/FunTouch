@@ -7,7 +7,7 @@
 
 import UIKit
 
-class registrationView: UIViewController, UITextFieldDelegate {
+class RegistrationViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nameTextField: UITextField!
     
@@ -71,6 +71,8 @@ class registrationView: UIViewController, UITextFieldDelegate {
     @IBAction func moveToInteractiveView(_ sender: UIButton) {
         let nextVC = InteractiveView()
         navigationController?.pushViewController(nextVC, animated: true)
+        let isReg = true
+        UserDefaults.standard.set(isReg, forKey: "isReg")
     }
 
     @IBAction func skipButton(_ sender: UIButton) {
@@ -78,65 +80,65 @@ class registrationView: UIViewController, UITextFieldDelegate {
         navigationController?.pushViewController(nextVC, animated: true)
     }
 
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//
+//
+//        if textField.text!.last == " "  && string == " "{
+//              return false
+//             }
+//          if emailTextField.text!.last == "@"  && string == "@"{
+//
+//             return false
+//            }
+//          if emailTextField.text!.last == "."  && string == "."{
+//
+//             return false
+//            }
+//          if emailTextField.text!.last == "_"  && string == "_"{
+//             return false
+//            }
+//
+//          if textField.text?.count == 0 && string == " " {
+//                  return false
+//              }
+//
+//          if textField.text?.count == 0 && string == "." {
+//                  return false
+//              }
+//          if textField.text?.count == 0 && string == "@" {
+//                  return false
+//              }
+//          if textField.text?.count == 0 && string == "_" {
+//                  return false
+//              }
+//
+//         if textField == nameTextField {
+//              let allowedCharacters = CharacterSet(charactersIn:"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ")
+//              let characterSet = CharacterSet(charactersIn: string)
+//              return allowedCharacters.isSuperset(of: characterSet)
+//
+//          }
+//
+//          if textField == emailTextField {
+//              let allowedCharacters = CharacterSet(charactersIn:"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ_.@")
+//              let characterSet = CharacterSet(charactersIn: string)
+//              return allowedCharacters.isSuperset(of: characterSet)
+//
+//          }
+//
+//          if textField == ageTextField {
+//              let allowedCharacters = CharacterSet(charactersIn:"0123456789")
+//              let characterSet = CharacterSet(charactersIn: string)
+//              return allowedCharacters.isSuperset(of: characterSet)
+//
+//          }
+//
+//          if range.location == 0 && string == " " {
+//                    return false
+//                }
+//
+//        return true
+//    }
 
-
-        if textField.text!.last == " "  && string == " "{
-              return false
-             }
-          if emailTextField.text!.last == "@"  && string == "@"{
-
-             return false
-            }
-          if emailTextField.text!.last == "."  && string == "."{
-
-             return false
-            }
-          if emailTextField.text!.last == "_"  && string == "_"{
-             return false
-            }
-
-          if textField.text?.count == 0 && string == " " {
-                  return false
-              }
-
-          if textField.text?.count == 0 && string == "." {
-                  return false
-              }
-          if textField.text?.count == 0 && string == "@" {
-                  return false
-              }
-          if textField.text?.count == 0 && string == "_" {
-                  return false
-              }
-
-         if textField == nameTextField {
-              let allowedCharacters = CharacterSet(charactersIn:"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ")
-              let characterSet = CharacterSet(charactersIn: string)
-              return allowedCharacters.isSuperset(of: characterSet)
-
-          }
-
-          if textField == emailTextField {
-              let allowedCharacters = CharacterSet(charactersIn:"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ_.@")
-              let characterSet = CharacterSet(charactersIn: string)
-              return allowedCharacters.isSuperset(of: characterSet)
-
-          }
-
-          if textField == ageTextField {
-              let allowedCharacters = CharacterSet(charactersIn:"0123456789")
-              let characterSet = CharacterSet(charactersIn: string)
-              return allowedCharacters.isSuperset(of: characterSet)
-
-          }
-
-          if range.location == 0 && string == " " {
-                    return false
-                }
-
-        return true
-    }
-
-
+   
 }

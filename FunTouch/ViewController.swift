@@ -29,8 +29,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func goToStartPage(_ sender: UIButton) {
-        let mainView = registrationView()
-        navigationController?.pushViewController(mainView, animated: true)
+       
+        let isReg = UserDefaults.standard.bool(forKey: "isReg")
+        print(isReg)
+        
+        let nextView: UIViewController
+        
+        isReg == true ? (nextView = InteractiveView()) : (nextView = RegistrationViewController())
+        
+        navigationController?.pushViewController(nextView, animated: true)
+        
     }
     
     @IBAction func buttonNavigation(_ sender: UIButton) {

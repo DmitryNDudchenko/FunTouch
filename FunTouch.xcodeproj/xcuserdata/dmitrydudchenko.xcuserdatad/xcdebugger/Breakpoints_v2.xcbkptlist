@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "283F400E-24D6-4FA2-888A-48F66F00FEC9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FunTouch/View/Registration View/RegistrationViewController.swift"
@@ -62,6 +62,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "44"
                   endingLineNumber = "44"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "283F400E-24D6-4FA2-888A-48F66F00FEC9 - 9257a571c14d23e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FunTouch.RegistrationViewController.configView() -&gt; ()"
+                  moduleName = "FunTouch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitrydudchenko/Documents/Fun%20Touch/FunTouch/View/Registration%20View/RegistrationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
                   offsetFromSymbolStart = "30">
                </Location>
             </Locations>
