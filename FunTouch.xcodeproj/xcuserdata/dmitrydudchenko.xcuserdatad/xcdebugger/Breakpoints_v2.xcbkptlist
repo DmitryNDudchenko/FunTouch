@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3CB9CD0A-952C-4A94-99C2-9AEB3EB3D462"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "283F400E-24D6-4FA2-888A-48F66F00FEC9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FunTouch/View/Registration View/RegistrationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "configView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "283F400E-24D6-4FA2-888A-48F66F00FEC9 - 3fd0cd3e4ccfc881"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FunTouch.registrationView.configView() -&gt; ()"
+                  moduleName = "FunTouch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitrydudchenko/Documents/Fun%20Touch/FunTouch/View/Registration%20View/RegistrationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "283F400E-24D6-4FA2-888A-48F66F00FEC9 - 3fd0cd3e4ccfcbfd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FunTouch.registrationView.configView() -&gt; ()"
+                  moduleName = "FunTouch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitrydudchenko/Documents/Fun%20Touch/FunTouch/View/Registration%20View/RegistrationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "283F400E-24D6-4FA2-888A-48F66F00FEC9 - 3fd0cd3e4ccfcbde"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FunTouch.registrationView.configView() -&gt; ()"
+                  moduleName = "FunTouch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitrydudchenko/Documents/Fun%20Touch/FunTouch/View/Registration%20View/RegistrationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

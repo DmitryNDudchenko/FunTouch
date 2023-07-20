@@ -9,7 +9,6 @@ import UIKit
 
 class registrationView: UIViewController, UITextFieldDelegate {
 
-
     @IBOutlet weak var nameTextField: UITextField!
     
     @IBOutlet weak var ageTextField: UITextField!
@@ -19,7 +18,6 @@ class registrationView: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var registerButton: UIButton!
 
     @IBOutlet weak var contineButton: UIButton!
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,9 +36,9 @@ class registrationView: UIViewController, UITextFieldDelegate {
     }
 
     func configView(){
-        nameTextField.delegate = self
-        ageTextField.delegate = self
-        emailTextField.delegate = self
+//        nameTextField.delegate = self
+//        ageTextField.delegate = self
+//        emailTextField.delegate = self
        
         ViewConfig.instance.configTextField(nameTextField)
         ViewConfig.instance.configTextField(ageTextField)

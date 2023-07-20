@@ -13,7 +13,7 @@
                 <outlet property="ageTextField" destination="7LI-c0-XBi" id="K97-ss-DLD"/>
                 <outlet property="contineButton" destination="bq3-eu-ACL" id="WGP-PL-ufo"/>
                 <outlet property="emailTextField" destination="feX-ZX-lIo" id="WC4-wO-o7D"/>
-                <outlet property="nameTextField" destination="a8k-Z5-kUh" id="qBp-rv-ahN"/>
+                <outlet property="nameTextField" destination="a8k-Z5-kUh" id="UyB-ca-MUH"/>
                 <outlet property="registerButton" destination="i71-7l-9IH" id="GFe-5p-Sal"/>
                 <outlet property="view" destination="iN0-l3-epB" id="O7m-hd-unz"/>
             </connections>

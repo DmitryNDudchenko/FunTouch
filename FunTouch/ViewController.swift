@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var buttonContin: UIButton!
     
-    let generator = UIImpactFeedbackGenerator(style: .heavy)  вибрацией. Параметр style: определяет тип виброотклика
+    let generator = UIImpactFeedbackGenerator(style: .heavy)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func goToStartPage(_ sender: UIButton) {
-//        let mainView
-//        navigationController?.pushViewController(mainView, animated: true)
+        let mainView = registrationView()
+        navigationController?.pushViewController(mainView, animated: true)
     }
     
     @IBAction func buttonNavigation(_ sender: UIButton) {
