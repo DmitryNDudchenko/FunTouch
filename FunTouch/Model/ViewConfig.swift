@@ -33,7 +33,7 @@ class ViewConfig{
     
     func configButton(_ button: UIButton?){
         
-        if (button!.isEnabled){
+        if ((button?.isEnabled) != nil){
             button?.layer.cornerRadius = 16.0
             button?.backgroundColor = UIColor.white
             button?.setTitleColor(.black, for: .normal)
