@@ -291,10 +291,13 @@
                                                 <color key="value" red="0.1333333333" green="0.43137254899999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
-                                                <color key="value" red="0.3411764706" green="0.85490196080000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" systemColor="systemYellowColor"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="counter">
-                                                <integer key="value" value="3"/>
+                                                <integer key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outLineColor">
+                                                <color key="value" systemColor="systemIndigoColor"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
@@ -452,10 +455,13 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.38493387400000001" green="0.63882642919999999" blue="0.63882642919999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" systemColor="systemPinkColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressedWithButton:" destination="ZLR-hj-3x0" eventType="touchUpInside" id="sfG-Fx-Pb3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFB-BY-pLy" customClass="PushButton" customModule="FunTouch" customModuleProvider="target">
                                 <rect key="frame" x="170" y="612" width="50" height="50"/>
@@ -470,6 +476,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressedWithButton:" destination="ZLR-hj-3x0" eventType="touchUpInside" id="dXg-UB-09h"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dft-3E-86M"/>
@@ -484,13 +493,31 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cap of water" style="editor" id="ynn-E3-fzb"/>
+                    <connections>
+                        <outlet property="containerView" destination="me3-m8-6vc" id="8PJ-jT-otF"/>
+                        <outlet property="counterOFWater" destination="BBU-Or-PUH" id="Frq-pv-sFJ"/>
+                        <outlet property="counterView" destination="YBb-9Y-S5n" id="iSr-OL-gCU"/>
+                        <outlet property="graphView" destination="0XX-ZQ-MAo" id="ryG-C4-ckL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cm0-dK-K58" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="vwo-es-rBO"/>
+                <tapGestureRecognizer id="vwo-es-rBO">
+                    <connections>
+                        <action selector="counterViewTap:" destination="ZLR-hj-3x0" id="u90-gv-Ses"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2795" y="4"/>
+            <point key="canvasLocation" x="2480" y="4"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="603-d9-Lgh">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="pFB-BY-pLy">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="3285303_astronomy_galaxy_planets_solar_space_icon" width="1024" height="1024"/>
         <image name="arrow.right.square.fill" catalog="system" width="128" height="114"/>
@@ -505,6 +532,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
