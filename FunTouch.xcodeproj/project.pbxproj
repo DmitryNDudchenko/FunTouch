@@ -18,6 +18,10 @@
 		709D440C2A6075D20057C544 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D440B2A6075D20057C544 /* Alerts.swift */; };
 		709D440F2A607D540057C544 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D440D2A607D540057C544 /* AlertsView.swift */; };
 		709D44102A607D540057C544 /* AlertsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709D440E2A607D540057C544 /* AlertsView.xib */; };
+		70AA2F4F2A701A4A00C92969 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AA2F4A2A701A4A00C92969 /* GraphView.swift */; };
+		70AA2F512A701A4A00C92969 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AA2F4C2A701A4A00C92969 /* PushButton.swift */; };
+		70AA2F522A701A4A00C92969 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AA2F4D2A701A4A00C92969 /* CounterView.swift */; };
+		70AA2F532A701A4A00C92969 /* CapCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AA2F4E2A701A4A00C92969 /* CapCounterViewController.swift */; };
 		70B42E8E2A4B443300107148 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B42E8C2A4B443300107148 /* RegistrationViewController.swift */; };
 		70B42E8F2A4B443300107148 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70B42E8D2A4B443300107148 /* RegistrationViewController.xib */; };
 		70B42E922A4B455500107148 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B42E912A4B455500107148 /* GradientView.swift */; };
@@ -52,6 +56,10 @@
 		709D440B2A6075D20057C544 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		709D440D2A607D540057C544 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
 		709D440E2A607D540057C544 /* AlertsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertsView.xib; sourceTree = "<group>"; };
+		70AA2F4A2A701A4A00C92969 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		70AA2F4C2A701A4A00C92969 /* PushButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		70AA2F4D2A701A4A00C92969 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		70AA2F4E2A701A4A00C92969 /* CapCounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapCounterViewController.swift; sourceTree = "<group>"; };
 		70B42E8C2A4B443300107148 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		70B42E8D2A4B443300107148 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		70B42E912A4B455500107148 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -143,6 +151,18 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
+		70AA2F492A701A4A00C92969 /* CapOfWaterView */ = {
+			isa = PBXGroup;
+			children = (
+				70AA2F4A2A701A4A00C92969 /* GraphView.swift */,
+				70AA2F4C2A701A4A00C92969 /* PushButton.swift */,
+				70AA2F4D2A701A4A00C92969 /* CounterView.swift */,
+				70AA2F4E2A701A4A00C92969 /* CapCounterViewController.swift */,
+			);
+			name = CapOfWaterView;
+			path = "../../../../Desktop/FunTouch-3/FunTouch/CapOfWaterView";
+			sourceTree = "<group>";
+		};
 		70B42E7F2A4B2FD500107148 /* Test View  */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +224,7 @@
 		70F473132A32362F00CFD712 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				70AA2F492A701A4A00C92969 /* CapOfWaterView */,
 				70B42E812A4B301000107148 /* NoteView */,
 				709766ED2A44FD4E000D81FD /* CustomView */,
 				70F4731D2A32405400CFD712 /* CustomFrameView */,
@@ -317,18 +338,22 @@
 				70B42E922A4B455500107148 /* GradientView.swift in Sources */,
 				114577892943A21C0097426C /* AppDelegate.swift in Sources */,
 				70E5BF6A2A698F3A00586CB2 /* InteractiveView.swift in Sources */,
+				70AA2F532A701A4A00C92969 /* CapCounterViewController.swift in Sources */,
 				70E5BF712A69B06B00586CB2 /* FingerPaintTools.swift in Sources */,
 				70B42E8E2A4B443300107148 /* RegistrationViewController.swift in Sources */,
 				709766EC2A44FD4A000D81FD /* CustomView.swift in Sources */,
 				70F473282A32588900CFD712 /* NoteViewController.swift in Sources */,
 				70F473112A32360700CFD712 /* AnotherXibViewController.swift in Sources */,
+				70AA2F512A701A4A00C92969 /* PushButton.swift in Sources */,
 				70E5BF732A69B88A00586CB2 /* CustomDrawFig.swift in Sources */,
 				70E5BF6D2A699B7800586CB2 /* Snippet.swift in Sources */,
 				1145778B2943A21C0097426C /* SceneDelegate.swift in Sources */,
 				709D440F2A607D540057C544 /* AlertsView.swift in Sources */,
 				70E5BF6F2A69A28700586CB2 /* DrowSimpleLine.swift in Sources */,
+				70AA2F522A701A4A00C92969 /* CounterView.swift in Sources */,
 				709D440C2A6075D20057C544 /* Alerts.swift in Sources */,
 				70F4730D2A322A2400CFD712 /* mainViewController.swift in Sources */,
+				70AA2F4F2A701A4A00C92969 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
