@@ -20,7 +20,8 @@ class InteractiveView: UIViewController {
     }
 
     @IBAction func goToNextView(_ sender: UIButton) {
-        
+        let nextView: UIViewController = MessageViewController()
+        navigationController?.pushViewController(nextView, animated: true)
     }
 
 }

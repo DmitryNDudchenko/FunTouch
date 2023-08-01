@@ -13,6 +13,10 @@
 		114577902943A21C0097426C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1145778E2943A21C0097426C /* Main.storyboard */; };
 		114577922943A21F0097426C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114577912943A21F0097426C /* Assets.xcassets */; };
 		114577952943A21F0097426C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114577932943A21F0097426C /* LaunchScreen.storyboard */; };
+		7065D2F92A794A6B009DA75A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065D2F72A794A6B009DA75A /* MessageViewController.swift */; };
+		7065D2FA2A794A6B009DA75A /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7065D2F82A794A6B009DA75A /* MessageViewController.xib */; };
+		7065D2FD2A794AC3009DA75A /* ADSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065D2FB2A794AC3009DA75A /* ADSViewController.swift */; };
+		7065D2FE2A794AC3009DA75A /* ADSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7065D2FC2A794AC3009DA75A /* ADSViewController.xib */; };
 		709766EC2A44FD4A000D81FD /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709766EB2A44FD4A000D81FD /* CustomView.swift */; };
 		709766EF2A44FD5F000D81FD /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709766EE2A44FD5F000D81FD /* CustomView.xib */; };
 		709D440C2A6075D20057C544 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D440B2A6075D20057C544 /* Alerts.swift */; };
@@ -51,6 +55,10 @@
 		114577912943A21F0097426C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114577942943A21F0097426C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		114577962943A21F0097426C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7065D2F72A794A6B009DA75A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		7065D2F82A794A6B009DA75A /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		7065D2FB2A794AC3009DA75A /* ADSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSViewController.swift; sourceTree = "<group>"; };
+		7065D2FC2A794AC3009DA75A /* ADSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ADSViewController.xib; sourceTree = "<group>"; };
 		709766EB2A44FD4A000D81FD /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		709766EE2A44FD5F000D81FD /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		709D440B2A6075D20057C544 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
@@ -110,14 +118,17 @@
 		114577872943A21C0097426C /* FunTouch */ = {
 			isa = PBXGroup;
 			children = (
-				709D44052A6070760057C544 /* AlertView */,
 				70F473132A32362F00CFD712 /* View */,
+				709D44052A6070760057C544 /* AlertView */,
 				1145778C2943A21C0097426C /* ViewController.swift */,
 				1145778E2943A21C0097426C /* Main.storyboard */,
+				70B42E872A4B43D600107148 /* Registration View */,
+				70E5BF672A698F1100586CB2 /* Interactive View */,
+				7065D2F52A794A33009DA75A /* Message View */,
+				7065D2F62A794A43009DA75A /* ADS View */,
 				70B42E902A4B44E400107148 /* Model */,
 				1145779C2943BE340097426C /* Source */,
 				114577962943A21F0097426C /* Info.plist */,
-				70E5BF6C2A699B7800586CB2 /* Snippet.swift */,
 			);
 			path = FunTouch;
 			sourceTree = "<group>";
@@ -125,12 +136,31 @@
 		1145779C2943BE340097426C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				70E5BF6C2A699B7800586CB2 /* Snippet.swift */,
 				114577932943A21F0097426C /* LaunchScreen.storyboard */,
 				114577912943A21F0097426C /* Assets.xcassets */,
 				114577882943A21C0097426C /* AppDelegate.swift */,
 				1145778A2943A21C0097426C /* SceneDelegate.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		7065D2F52A794A33009DA75A /* Message View */ = {
+			isa = PBXGroup;
+			children = (
+				7065D2F72A794A6B009DA75A /* MessageViewController.swift */,
+				7065D2F82A794A6B009DA75A /* MessageViewController.xib */,
+			);
+			path = "Message View";
+			sourceTree = "<group>";
+		};
+		7065D2F62A794A43009DA75A /* ADS View */ = {
+			isa = PBXGroup;
+			children = (
+				7065D2FB2A794AC3009DA75A /* ADSViewController.swift */,
+				7065D2FC2A794AC3009DA75A /* ADSViewController.xib */,
+			);
+			path = "ADS View";
 			sourceTree = "<group>";
 		};
 		709766ED2A44FD4E000D81FD /* CustomView */ = {
@@ -230,8 +260,6 @@
 				70F473142A323A1600CFD712 /* Cell */,
 				70B42E802A4B2FF500107148 /* AnotherXibView */,
 				70B42E7F2A4B2FD500107148 /* Test View  */,
-				70B42E872A4B43D600107148 /* Registration View */,
-				70E5BF672A698F1100586CB2 /* Interactive View */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +340,7 @@
 			files = (
 				114577952943A21F0097426C /* LaunchScreen.storyboard in Resources */,
 				114577922943A21F0097426C /* Assets.xcassets in Resources */,
+				7065D2FA2A794A6B009DA75A /* MessageViewController.xib in Resources */,
 				70F473182A323A3F00CFD712 /* CustomTableViewCell.xib in Resources */,
 				114577902943A21C0097426C /* Main.storyboard in Resources */,
 				70B42E8F2A4B443300107148 /* RegistrationViewController.xib in Resources */,
@@ -320,6 +349,7 @@
 				709766EF2A44FD5F000D81FD /* CustomView.xib in Resources */,
 				70E5BF6B2A698F3A00586CB2 /* InteractiveView.xib in Resources */,
 				70F4730E2A322A2400CFD712 /* mainViewController.xib in Resources */,
+				7065D2FE2A794AC3009DA75A /* ADSViewController.xib in Resources */,
 				70F473122A32360700CFD712 /* AnotherXibViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +377,8 @@
 				70E5BF732A69B88A00586CB2 /* CustomDrawFig.swift in Sources */,
 				70E5BF6D2A699B7800586CB2 /* Snippet.swift in Sources */,
 				1145778B2943A21C0097426C /* SceneDelegate.swift in Sources */,
+				7065D2F92A794A6B009DA75A /* MessageViewController.swift in Sources */,
+				7065D2FD2A794AC3009DA75A /* ADSViewController.swift in Sources */,
 				709D440F2A607D540057C544 /* AlertsView.swift in Sources */,
 				70AA2F562A701E0100C92969 /* GraphView.swift in Sources */,
 				70E5BF6F2A69A28700586CB2 /* DrowSimpleLine.swift in Sources */,
