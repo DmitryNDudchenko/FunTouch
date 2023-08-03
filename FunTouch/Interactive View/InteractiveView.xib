@@ -42,7 +42,7 @@
                         <action selector="goToNextView:" destination="-1" eventType="touchUpInside" id="Q0B-Oj-Qjg"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZj-CG-ZrK" customClass="CanvasView" customModule="FunTouch" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZj-CG-ZrK" customClass="FingerPaintTools" customModule="FunTouch" customModuleProvider="target">
                     <rect key="frame" x="5" y="250.5" width="365" height="331.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>

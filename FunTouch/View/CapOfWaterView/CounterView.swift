@@ -7,17 +7,26 @@
 
 import UIKit
 
+enum Constants {
+ static let numberOfGlasses = 15
+ static let lineWidth: CGFloat = 5.0
+ static let arcWidth: CGFloat = 76
+
+ static var halfOfLineWidth: CGFloat {
+   return lineWidth / 2
+ }
+}
 @IBDesignable
 class CounterView: UIView {
-  private enum Constants {
-    static let numberOfGlasses = 15
-    static let lineWidth: CGFloat = 5.0
-    static let arcWidth: CGFloat = 76
-
-    static var halfOfLineWidth: CGFloat {
-      return lineWidth / 2
-    }
-  }
+//   enum Constants {
+//    static let numberOfGlasses = 15
+//    static let lineWidth: CGFloat = 5.0
+//    static let arcWidth: CGFloat = 76
+//
+//    static var halfOfLineWidth: CGFloat {
+//      return lineWidth / 2
+//    }
+//  }
 
   @IBInspectable var counter: Int = 8 {
     didSet {

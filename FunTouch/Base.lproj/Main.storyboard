@@ -176,10 +176,13 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="systemPinkColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button" cornerStyle="large">
+                                        <buttonConfiguration key="configuration" style="filled" title="EmojiTableView" cornerStyle="large">
                                             <color key="baseForegroundColor" name="systemMintColor" catalog="System" colorSpace="catalog"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="7QU-I6-l6M" kind="show" id="emu-5Y-gXL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2L-gz-ZiP">
                                         <rect key="frame" x="0.0" y="290" width="280" height="50"/>
@@ -229,6 +232,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqI-ua-X40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1609" y="4"/>
+        </scene>
+        <!--EmojiTable-->
+        <scene sceneID="qNJ-i7-gxk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EmojiTable" id="7QU-I6-l6M" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ix7-xz-Jik"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aa0-p8-fli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2247" y="177"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B7I-bH-rEV">
@@ -331,7 +344,7 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7B-2j-Ndp">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7B-2j-Ndp">
                                                 <rect key="frame" x="275.33333333333331" y="49" width="16.666666666666686" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Mi9-oa-o2K"/>
@@ -493,10 +506,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cap of water" style="editor" id="ynn-E3-fzb"/>
                     <connections>
+                        <outlet property="avarage" destination="btU-Aq-d8z" id="bob-ym-CYa"/>
                         <outlet property="containerView" destination="me3-m8-6vc" id="8PJ-jT-otF"/>
                         <outlet property="counterOFWater" destination="BBU-Or-PUH" id="Frq-pv-sFJ"/>
                         <outlet property="counterView" destination="YBb-9Y-S5n" id="iSr-OL-gCU"/>
                         <outlet property="graphView" destination="0XX-ZQ-MAo" id="ryG-C4-ckL"/>
+                        <outlet property="maxLabel" destination="V7B-2j-Ndp" id="i7M-a1-EaD"/>
+                        <outlet property="stackDateLabel" destination="Bd4-Yc-oF3" id="Ti3-ZC-rSH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cm0-dK-K58" sceneMemberID="firstResponder"/>
@@ -506,7 +522,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2480" y="4"/>
+            <point key="canvasLocation" x="2478" y="-532"/>
         </scene>
     </scenes>
     <designables>

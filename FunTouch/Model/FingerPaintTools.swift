@@ -17,6 +17,8 @@ class FingerPaintTools: UIView {
     var lastPoint: CGPoint!
     private var lines = [Line]()
     
+    
+    
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         
@@ -53,7 +55,7 @@ class FingerPaintTools: UIView {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        clearView()
+        //clearView()
     }
 
     func clearView(){
