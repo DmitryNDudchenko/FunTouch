@@ -83,7 +83,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Nc-zg-s3S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4143.0769230769229" y="-204.02843601895734"/>
+            <point key="canvasLocation" x="4085" y="-204"/>
         </scene>
         <!--Add Edit Emoji-->
         <scene sceneID="oo7-qW-Jm5">
@@ -107,6 +107,9 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="390" height="34.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="xdD-tB-Hq2" eventType="editingDidEnd" id="Rt6-U3-yYX"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -132,6 +135,9 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="390" height="34.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="xdD-tB-Hq2" eventType="editingDidEnd" id="lny-cX-1W4"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -157,6 +163,9 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="390" height="34.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="xdD-tB-Hq2" eventType="editingDidEnd" id="nvA-d9-34e"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -182,6 +191,9 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="390" height="34.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="xdD-tB-Hq2" eventType="editingDidEnd" id="VXF-vJ-lS0"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>

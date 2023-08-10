@@ -19,7 +19,6 @@ class EmojiTableViewController: UITableViewController {
         Emojis(symbol: "🧶", name: "Some Ini", description: "asdasdasdasdas", usage: "some usage"),
         Emojis(symbol: "⛑️", name: "Medic", description: "asdasasd", usage: "some usage"),
         Emojis(symbol: "🪖", name: "Military", description: "adkjhdkjhahdjlasd", usage: "some usage")
-
     ]
 
     override func viewDidLoad() {
@@ -28,6 +27,7 @@ class EmojiTableViewController: UITableViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100.0
 
+        tableView.register(UINib(nibName: "", bundle: .main), forCellReuseIdentifier: "")
     }
 
     override func viewWillAppear(_ animated: Bool) {
