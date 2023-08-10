@@ -14,14 +14,14 @@ enum SupplementaryElements {
 }
 
 enum GridCompositionalLayout {
-    
     static func generateLayout() -> UICollectionViewCompositionalLayout {
-        let config = UICollectionViewCompositionalLayoutConfiguration()
         
-        config.boundarySupplementaryItems = []
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.boundarySupplementaryItems = [makeCollectionHeader()]
         
         return UICollectionViewCompositionalLayout(
             sectionProvider: { section, _ in
+                
                 if section % 2 == 0 {
                     return makeLetterSection()
                 }
@@ -31,62 +31,103 @@ enum GridCompositionalLayout {
         )
     }
     
-   private static func makeItem() -> NSCollectionLayoutItem {
-        let item = NSCollectionLayoutItem(layoutSize:
-                .init(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalWidth(0.5)))
+    private static func makeItem() -> NSCollectionLayoutItem {
+        let item = NSCollectionLayoutItem(
+            layoutSize: .init(
+                widthDimension: .fractionalWidth(0.5),
+                heightDimension: .fractionalWidth(0.5)
+            )
+        )
         item.contentInsets = .init(top: 0, leading: 2, bottom: 2, trailing: 2)
+        
         return item
     }
     
-    private static func makeBigItem() -> NSCollectionLayoutItem{
-        let item = NSCollectionLayoutItem(layoutSize:
-                .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(1)))
+    private static func makeBigItem() -> NSCollectionLayoutItem {
+        let item = NSCollectionLayoutItem(
+            layoutSize: .init(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .fractionalWidth(1)
+            )
+        )
         item.contentInsets = .init(top: 0, leading: 2, bottom: 0, trailing: 2)
+        
         return item
     }
     
     private static func makeGroup() -> NSCollectionLayoutGroup {
-        
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(0.5)), subitems: [makeItem()]
+        let group =  NSCollectionLayoutGroup.horizontal(
+            layoutSize: .init(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .fractionalWidth(0.5)
+            ),
+            subitems: [makeItem()]
         )
         
         group.contentInsets = .init(top: 0, leading: 2, bottom: 4, trailing: 2)
         
-        let groupWithBigElement = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(1)), subitems: [makeBigItem()])
+        let groupWithBigElement = NSCollectionLayoutGroup.horizontal(
+            layoutSize: .init(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .fractionalWidth(1)
+            ),
+            subitems: [makeBigItem()]
+        )
         
         groupWithBigElement.contentInsets = .init(top: 0, leading: 2, bottom: 4, trailing: 2)
         
-        let compositionGroup = NSCollectionLayoutGroup.vertical(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(1.5)), subitems: [group, groupWithBigElement])
-                                                                
-        return compositionGroup
-                                                        
+        
+        let compositionalGroup = NSCollectionLayoutGroup.vertical(
+            layoutSize: .init(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .fractionalWidth(1.5)
+            ),
+            subitems: [group, groupWithBigElement]
+        )
+        
+        return compositionalGroup
     }
     
     private static func makeSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
         return NSCollectionLayoutBoundarySupplementaryItem(
-            layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(32)),
+            layoutSize: .init(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .absolute(32)
+            ),
             elementKind: SupplementaryElements.sectionHeader,
-            alignment: .top)
+            alignment: .top
+        )
     }
     
     private static func makeCollectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
         return NSCollectionLayoutBoundarySupplementaryItem(
-            layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(32)),
+            layoutSize: .init(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .absolute(32)
+            ),
             elementKind: SupplementaryElements.collectionHeader,
-            alignment: .top)
+            alignment: .top
+        )
     }
     
     private static func makeSpacer() -> NSCollectionLayoutBoundarySupplementaryItem {
         return NSCollectionLayoutBoundarySupplementaryItem(
-            layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .absolute(60)),
+            layoutSize: .init(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .absolute(60)
+            ),
             elementKind: SupplementaryElements.sectionSpacer,
-            alignment: .top)
+            alignment: .top
+        )
     }
     
     private static func makeSection() -> NSCollectionLayoutSection {
         let section = NSCollectionLayoutSection(group: makeGroup())
-        section.contentInsets = .init(top: 16, leading: 0, bottom: 0, trailing: 0)
-        
+        section.contentInsets = .init(
+            top: 16,
+            leading: 0,
+            bottom: 0, trailing: 0
+        )
         section.boundarySupplementaryItems = [makeSpacer(), makeSectionHeader()]
         
         return section
@@ -97,7 +138,6 @@ enum GridCompositionalLayout {
 extension GridCompositionalLayout {
     
     private static func makeLetterItem() -> NSCollectionLayoutItem {
-        
         let item = NSCollectionLayoutItem(
             layoutSize: .init(
                 widthDimension: .fractionalWidth(1),
@@ -110,23 +150,28 @@ extension GridCompositionalLayout {
     }
     
     private static func makeLetterGroup() -> NSCollectionLayoutGroup {
-        
-        let group = NSCollectionLayoutGroup.vertical(
+        let group =  NSCollectionLayoutGroup.vertical(
             layoutSize: .init(
                 widthDimension: .fractionalWidth(3/8),
                 heightDimension: .fractionalWidth(6/8)
             ),
             subitems: [makeLetterItem()]
         )
+        
         return group
     }
     
     private static func makeLetterSection() -> NSCollectionLayoutSection {
-        
         let section = NSCollectionLayoutSection(group: makeLetterGroup())
-        section.contentInsets = .init(top: 16, leading: 0, bottom: 16, trailing: 0)
+        section.contentInsets = .init(
+            top: 16,
+            leading: 0,
+            bottom: 16,
+            trailing: 0
+        )
         section.orthogonalScrollingBehavior = .groupPagingCentered
         return section
+
     }
     
 }

@@ -20,7 +20,7 @@
 		700A9D922A82B8A900375725 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700A9D912A82B8A900375725 /* Model.swift */; };
 		700A9D942A82B96A00375725 /* GridCompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700A9D932A82B96A00375725 /* GridCompositionalLayout.swift */; };
 		700A9D962A82B98500375725 /* SupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700A9D952A82B98500375725 /* SupplementaryView.swift */; };
-		700A9D982A82B9A900375725 /* customCollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700A9D972A82B9A900375725 /* customCollViewController.swift */; };
+		700A9D982A82B9A900375725 /* CustomCollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700A9D972A82B9A900375725 /* CustomCollViewController.swift */; };
 		7065D2F92A794A6B009DA75A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065D2F72A794A6B009DA75A /* MessageViewController.swift */; };
 		7065D2FA2A794A6B009DA75A /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7065D2F82A794A6B009DA75A /* MessageViewController.xib */; };
 		7065D2FD2A794AC3009DA75A /* ADSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065D2FB2A794AC3009DA75A /* ADSViewController.swift */; };
@@ -77,7 +77,7 @@
 		700A9D912A82B8A900375725 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		700A9D932A82B96A00375725 /* GridCompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCompositionalLayout.swift; sourceTree = "<group>"; };
 		700A9D952A82B98500375725 /* SupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementaryView.swift; sourceTree = "<group>"; };
-		700A9D972A82B9A900375725 /* customCollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCollViewController.swift; sourceTree = "<group>"; };
+		700A9D972A82B9A900375725 /* CustomCollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollViewController.swift; sourceTree = "<group>"; };
 		7065D2F72A794A6B009DA75A /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		7065D2F82A794A6B009DA75A /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
 		7065D2FB2A794AC3009DA75A /* ADSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADSViewController.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		700A9D8E2A82B78500375725 /* Profit Collection View */ = {
 			isa = PBXGroup;
 			children = (
-				700A9D972A82B9A900375725 /* customCollViewController.swift */,
+				700A9D972A82B9A900375725 /* CustomCollViewController.swift */,
 				700A9D912A82B8A900375725 /* Model.swift */,
 				700A9D932A82B96A00375725 /* GridCompositionalLayout.swift */,
 				700A9D952A82B98500375725 /* SupplementaryView.swift */,
@@ -449,7 +449,7 @@
 				70B42E922A4B455500107148 /* GradientView.swift in Sources */,
 				700A9D942A82B96A00375725 /* GridCompositionalLayout.swift in Sources */,
 				114577892943A21C0097426C /* AppDelegate.swift in Sources */,
-				700A9D982A82B9A900375725 /* customCollViewController.swift in Sources */,
+				700A9D982A82B9A900375725 /* CustomCollViewController.swift in Sources */,
 				70E5BF6A2A698F3A00586CB2 /* InteractiveView.swift in Sources */,
 				70E5BF712A69B06B00586CB2 /* FingerPaintTools.swift in Sources */,
 				70B42E8E2A4B443300107148 /* RegistrationViewController.swift in Sources */,

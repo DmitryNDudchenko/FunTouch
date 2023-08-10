@@ -269,10 +269,10 @@
             </objects>
             <point key="canvasLocation" x="2286" y="-54"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--CustomCollViewStore-->
         <scene sceneID="b4h-mS-EKe">
             <objects>
-                <viewControllerPlaceholder id="tIl-We-RzD" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="CustomCollViewStore" id="tIl-We-RzD" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="dpm-pk-TWO"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JiZ-i1-G6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

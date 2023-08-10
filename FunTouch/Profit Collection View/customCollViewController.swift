@@ -67,7 +67,7 @@ extension CustomCollViewController: UICollectionViewDataSource {
         if section % 2 == 0 {
             return model.letters.count
         }
-        return model.color.count
+        return model.colors.count
     }
     
     
@@ -79,13 +79,19 @@ extension CustomCollViewController: UICollectionViewDataSource {
         }
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        cell.backgroundColor = model.color[indexPath.row]
+        cell.backgroundColor = model.colors[indexPath.row]
         cell.layer.cornerRadius = 15
         cell.layer.masksToBounds = true
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kind, for: indexPath)
+        if let header = cell as? HeaderView {
+            header.label.text = kind
+        }
+        return cell
+    }
     
     
 }
